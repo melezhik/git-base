@@ -1,0 +1,6 @@
+{
+  "name" : "git-base",
+  "description" : "Installs git client and makes some basic configuration",
+  "version" : "0.1.0"
+}
+
