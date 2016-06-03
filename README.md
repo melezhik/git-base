@@ -1,6 +1,6 @@
 # SYNOPSIS
 
-Installs git client and makes some basic configuration
+Installs git client and makes some basic configuration.
 
 # INSTALL
 
