@@ -2,8 +2,8 @@ git-base-ok
 generator: <<CODE
 !bash
 
-echo git user.email $(git config --global user.email)
-echo git user.name $(git config --global user.name)
+echo git user.email $(config email)
+echo git user.name $(config name)
 
 CODE
 
