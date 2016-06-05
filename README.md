@@ -15,6 +15,8 @@ This command will installs git client and set git configuration for email and na
 # Platfroms supported
 
 * CentOS
+* Ubuntu
+* Debian
  
 # Author
 
