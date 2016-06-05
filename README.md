@@ -20,4 +20,4 @@ This command will installs git client and set git configuration for email and na
  
 # Author
 
-[Alexey Melezhik](mailto:gmail.com)
+[Alexey Melezhik](mailto:gmail.com)  
