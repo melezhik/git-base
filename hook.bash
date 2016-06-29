@@ -1,30 +1,16 @@
-os=`cat /etc/*-release|grep -e ^ID=`
+os=`uname -a`
 
-echo installing git for $os ...
+shopt -s nocasematch;
 
-case "$os" in
-
-  "ID=debian" )
+if [[ $os =~ "debian" ]]; then
   run_story install-debian
-  ;;
-
-  "ID=ubuntu" )
+elif [[ "$os" =~ "ubuntu" ]]; then
   run_story install-debian
-  ;;
-
-  "ID=centos" )
+elif [[ "$os" =~ "centos" ]]; then
   run_story install-centos
-  ;;
-
-
-  * )
-
+else
   echo unsupported platform $os
-
   exit 1
-
-  ;;
-
-esac
+fi
 
 
