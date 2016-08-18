@@ -1,5 +1,3 @@
-os=`uname -a; cat /etc/issue`
-
 shopt -s nocasematch;
 
 if [[ $os =~ "debian" ]]; then
