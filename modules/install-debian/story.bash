@@ -1,3 +1,3 @@
-sudo DEBIAN_FRONTEND=noninteractive apt-get install -q git-core || exit 1
+DEBIAN_FRONTEND=noninteractive apt-get install -q git || exit 1
 echo install-ok
 
