@@ -1,14 +1,20 @@
-shopt -s nocasematch;
+install_git=$(config install_git)
 
-if [[ $os =~ "debian" ]]; then
-  run_story install-debian
-elif [[ "$os" =~ "ubuntu" ]]; then
-  run_story install-debian
-elif [[ "$os" =~ "centos" ]]; then
-  run_story install-centos
-else
-  echo unsupported platform $os
+if test $install_git = "on"; then
+
+  shopt -s nocasematch;
+  
+  if [[ $os =~ "debian" ]]; then
+    run_story install-debian
+  elif [[ "$os" =~ "ubuntu" ]]; then
+    run_story install-debian
+  elif [[ "$os" =~ "centos" ]]; then
+    run_story install-centos
+  else
+    echo unsupported platform $os
   exit 1
+  fi
+  
 fi
 
 
