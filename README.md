@@ -34,6 +34,7 @@ if set to 'on' installs git client, if not - do not install. Default value is `o
 * CentOS
 * Ubuntu
 * Debian
+* Minoca OS
  
 # Author
 

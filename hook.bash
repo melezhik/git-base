@@ -10,6 +10,8 @@ if test $install_git = "on"; then
     run_story install-debian
   elif [[ "$os" =~ "centos" ]]; then
     run_story install-centos
+  elif [[ "$os" =~ "minoca" ]]; then
+    run_story install-minoca
   else
     echo unsupported platform $os
   exit 1
