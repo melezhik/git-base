@@ -2,7 +2,7 @@ set -e
 name=$(config name)
 email=$(config email)
 config_scope=$(config config_scope)
-set_credential_cache=$(set_credential_cache)
+set_credential_cache=$(config set_credential_cache)
 
 if test "${config_scope}" = "global"; then
 

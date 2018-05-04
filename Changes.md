@@ -1,3 +1,7 @@
+# 0.2.2
+
+set_credential_cache bug fix
+
 # 0.2.1
 
 * default value for config_scope
