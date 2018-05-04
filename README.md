@@ -51,9 +51,9 @@ Example of `local`:
     --param name="'Alexey Melezhik'" \
     --cwd=$PWD
 
-## set_credential_cache
+# set_credential_cache
 
-If set to 'on' invoke credential.helper 'cache --timeout=3000000'. 
+If set to `on` invoke `credential.helper 'cache --timeout=3000000'`. 
 
 Default value is `off` ( do not set ). 
 
