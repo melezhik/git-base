@@ -68,4 +68,4 @@ Optional.
  
 # Author
 
-[Alexey Melezhik](mailto:gmail.com)  
+[Alexey Melezhik](mailto:gmail.com)
