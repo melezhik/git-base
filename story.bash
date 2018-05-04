@@ -1,8 +1,30 @@
+set -e
 name=$(config name)
+email=$(config email)
+config_scope=$(config config_scope)
+set_credential_cache=$(set_credential_cache)
 
-git config --global --replace-all user.email $(config email) || exit 1
-git config --global --replace-all user.name "${name}" || exit 1
+if test "${config_scope}" = "global"; then
 
-echo git user.email $(git config --global user.email)
-echo git user.name $(git config --global user.name)
+  git config --global --replace-all user.email "${email}"
+  git config --global --replace-all user.name "${name}"
+
+  echo git user.email $(git config --global user.email)
+  echo git user.name $(git config --global user.name)
+
+else
+
+  if test "${set_credential_cache}" = "on"; then
+    git config credential.helper 'cache --timeout=3000000'
+  fi
+
+  git config --replace-all user.email "${email}"
+  git config --replace-all user.name "${name}"
+
+  echo git user.email $(git config user.email)
+  echo git user.name $(git config  user.name)
+
+fi
+
+
 
