@@ -5,3 +5,12 @@ echo git user.name $(config name)
 CODE
 
 
+generator: <<CODE
+!bash
+set_credential_cache=$(config set_credential_cache)
+if test "${set_credential_cache}" = "on"; then
+  echo git credential.helper cache --timeout=3000000
+fi
+
+
+

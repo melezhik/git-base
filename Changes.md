@@ -1,3 +1,7 @@
+# 0.2.5
+
+fix: set credential.helper for global context
+
 # 0.2.2
 
 set_credential_cache bug fix
